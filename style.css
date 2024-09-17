@@ -39,8 +39,8 @@ body {
     content: '';
     z-index: -1; 
     position: absolute;
-    bottom: 10px; 
-    right: 8px; 
+    bottom: -10px; 
+    right: -8px; 
     width: 100%;
     height: 100%;
     background-color: #333; 
@@ -49,9 +49,10 @@ body {
 }
 
 
-.card-top h1{
+.card-top h2{
     position: relative;
-    right: -280px;
+    left: 0px;
+    top: -15px;
 }
 
 .card-top p{
