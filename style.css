@@ -17,6 +17,58 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 3rem 9%;
+}
+
+.heading{
+    text-align: center;
+    color:#141414;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    margin-top: 1rem;
+    background-color: #000000;
+    color: black; 
+    padding: 5px 15px 15px 10px;
+    border: none; 
+    border-radius: 8px; 
+    z-index: 1;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    bottom: 8px; 
+    right: 8px; 
+    width: 100%;
+    height: 100%;
+    background-color: #f5a623; 
+    z-index: -1; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background-color: #f39c12;
+}
+
+.btn a{
+    display: inline-block;
+    color: white; /* Ensure text is visible */
+    text-decoration: none; /* Remove underline */
+    padding: 0; /* Reset padding inside the a tag */
+    margin: -3px -5px; /* Adjust the margin to move the text top-left */
+}
+
 /* Header */
 
 .header{
@@ -59,4 +111,69 @@ html{
 
 .header .navbar a:hover{
     color: #fff;
+}
+
+.menu{
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+/* Home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(img/diet.jpg) no-repeat;
+    background-size: cover;
+    background-attachment:fixed; 
+}
+
+.home .content{
+    max-width: 60rem;
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 3.5rem;
+}
+
+/* About */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+
+.about .row .image{
+    flex: 1 1 40rem;
+}
+
+.about .row .image img{
+    width: 100%;
 }
