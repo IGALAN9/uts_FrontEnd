@@ -6,14 +6,11 @@ $(document).ready(function(){
 
         var filter = $(this).attr('data-filter')
 
-        if(filter == 'all'){
-            $('.tips .box').show(400);
-        }
-        else{
-            $('.tips .box').not('.' + filter).hide(200);
-            $('.tips .box').filter('.' + filter).show(400);
-        }
+            $('.tips .box').not('.' + filter).hide(100);
+            $('.tips .box').filter('.' + filter).show(100);
 
     });
+
+    $('.buttons[data-filter="sport"]').trigger('click');
 
 });
