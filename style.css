@@ -15,6 +15,19 @@ html{
     font-size: 80.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #141414;
 }
 
 section{
@@ -59,14 +72,6 @@ section{
 
 .btn:hover{
     background-color: #f39c12;
-}
-
-.btn a{
-    display: inline-block;
-    color: white; /* Ensure text is visible */
-    text-decoration: none; /* Remove underline */
-    padding: 0; /* Reset padding inside the a tag */
-    margin: -3px -5px; /* Adjust the margin to move the text top-left */
 }
 
 /* Header */
@@ -177,3 +182,13 @@ section{
 .about .row .image img{
     width: 100%;
 }
+
+/* BUAT DIET NANTI */
+
+/* Diet End */
+
+/* Buat Workout */
+
+
+
+/* Workout end */
