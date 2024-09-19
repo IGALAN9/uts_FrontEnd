@@ -11,6 +11,15 @@
 
 }
 
+:root{
+    --main-color: #29d978;
+    --primary: #f0fff7;
+    --black: #141414;
+    --white: #fff;
+    --bg: #f2f2f2;
+    --light-black: #666;
+}
+
 html{
     font-size: 80.5%;
     overflow-x: hidden;
@@ -183,12 +192,127 @@ section{
     width: 100%;
 }
 
-/* BUAT DIET NANTI */
+/* tips  */
 
-/* Diet End */
+.tips .controls{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+}
 
-/* Buat Workout */
+.tips .controls .buttons{
+    display: inline-block;
+    position: relative;
+    margin-top: 1rem;
+    background-color: #000000;
+    color: black; 
+    padding: 3px 20px 10px 15px;
+    border: none; 
+    border-radius: 8px; 
+    z-index: 1;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.tips .controls .buttons::before{
+    content: '';
+    position: absolute;
+    bottom: 8px; 
+    right: 8px; 
+    width: 100%;
+    height: 100%;
+    background-color: #f5a623; 
+    z-index: -1; 
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.tips .controls .buttons:hover{
+    background-color: #f39c12;
+}
 
 
+.tips .controls .buttons img{
+    height: 6rem;
+}
 
-/* Workout end */
+.tips .controls .buttons h3{
+    font-size: 1.7rem;
+    padding-top: -1rem;
+    color: var(--light-black);
+}
+
+.tips .controls .buttons.active{
+    background: var(--light-black);
+}
+
+.tips .image-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.tips .image-container .box{
+    background: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.tips .image-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.tips .image-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.tips .image-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tips .image-container .box .content{
+    padding: 2rem;
+}
+
+.tips .image-container .box .content .link{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.tips .image-container .box .content p{
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: var(--light-black);
+    line-height: 2;
+}
+
+.tips .image-container .box .content .icon{
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tips .image-container .box .content .icon a{
+    font-size: 1.4rem;
+    color: var(--light-black);
+}
+
+.tips .image-container .box .content .icon a:hover{
+    color: var(--main-color);
+}
+
+
+.tips .image-container .box .content .icon a i{
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+
+/* tips end */
+
