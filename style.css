@@ -12,7 +12,9 @@
 }
 
 :root{
-    --main-color: #29d978;
+    --main-color: #f5a623;
+    --bright:#ff5c00;
+    --font: #101d6b;
     --primary: #f0fff7;
     --black: #141414;
     --white: #fff;
@@ -115,6 +117,7 @@ section{
 .header .logo{
     font-size: 2.2rem;
     font-weight: bolder;
+    color: var(--font);
 }
 
 .header .navbar a{
@@ -141,7 +144,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(img/diet.jpg) no-repeat;
+    background: url(images/diet.jpg) no-repeat;
     background-size: cover;
     background-attachment:fixed; 
 }
@@ -192,6 +195,45 @@ section{
     width: 100%;
 }
 
+/* Reason */
+
+
+.reason .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reason .row .content{
+    flex: 1 1 40rem;
+}
+
+.reason .row .content h3{
+    font-size: 3.5rem;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.reason .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 2rem 0;
+    line-height: 2;
+}
+
+
+.reason .row .image{
+    flex: 1 1 40rem;
+}
+
+.reason .row .image img{
+    width: 80%;
+}
+
+
+
+
 /* tips  */
 
 .tips .controls{
@@ -234,20 +276,26 @@ section{
 
 
 .tips .controls .buttons img{
+    position: relative;
+    margin: 0 auto;
+    display: block;
     height: 6rem;
+    scale: 0.8;
 }
 
 .tips .controls .buttons h3{
     font-size: 1.7rem;
     padding-top: -1rem;
+    text-align: center;
     color: var(--light-black);
 }
 
 .tips .controls .buttons.active{
-    background: var(--light-black);
+    background: var(--bright);
 }
 
 .tips .image-container{
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
