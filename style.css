@@ -340,6 +340,26 @@ section{
     line-height: 2;
 }
 
+.tips .image-container .box .content h2{
+    font-size: 1.7rem;
+    padding-top: -1rem;
+    text-align: left;
+    color: var(--light-black);
+}
+
+.tips .image-container .box .content ul li {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--light-black);
+    line-height: 0;
+}
+
+.tips .image-container .box .content h3 li{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    color: var(--light-black);
+    line-height: 0;
+}
 .tips .image-container .box .content .icon{
     padding-top: 1rem;
     display: flex;
@@ -363,24 +383,3 @@ section{
 }
 
 /* tips end */
-
-/* Rest Time Section */
-.rest-time {
-    padding: 3rem 9%;
-    background-color: var(--white);
-}
-
-.rest-time .heading {
-    text-align: center;
-    color: #000000;
-    margin-bottom: 2rem;
-    font-size: 3.5rem;
-}
-
-.rest-time .content {
-    font-size: 1.6rem;
-    color: var(--light-black);
-    line-height: 2;
-    text-align: justify;
-}
-
