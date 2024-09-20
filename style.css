@@ -364,3 +364,23 @@ section{
 
 /* tips end */
 
+/* Rest Time Section */
+.rest-time {
+    padding: 3rem 9%;
+    background-color: var(--white);
+}
+
+.rest-time .heading {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+}
+
+.rest-time .content {
+    font-size: 1.6rem;
+    color: var(--light-black);
+    line-height: 2;
+    text-align: justify;
+}
+

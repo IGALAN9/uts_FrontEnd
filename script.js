@@ -12,5 +12,12 @@ $(document).ready(function(){
     });
 
     $('.buttons[data-filter="sport"]').trigger('click');
+    
+    $('.link[href="#resttime"]').click(function(event) {
+        event.preventDefault(); 
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500);
+    });
 
 });
