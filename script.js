@@ -33,4 +33,35 @@ $(document).ready(function() {
             },
         },
     });
+
+    // Toggle menu for mobile
+    let menuIcon = document.querySelector("#menu-icon");
+    let navbar = document.querySelector(".navbar");
+
+    menuIcon.onclick = () => {
+        menuIcon.classList.toggle("fa-times");
+        navbar.classList.toggle("active");
+    };
+
+    // Close menu when scrolling
+    window.onscroll = () => {
+        navbar.classList.remove("active");
+    };
+
+    $(document).ready(function() {
+        // Close menu when a link is clicked (on small screens)
+        $('.navbar a').click(function() {
+            $('#menu-icon').removeClass('fa-times');
+            $('.navbar').removeClass('active');
+        });
+    
+        // Ensure the navbar behaves correctly on window resize
+        $(window).resize(function() {
+            if ($(window).width() > 768) {
+                $('#menu-icon').removeClass('fa-times');
+                $('.navbar').removeClass('active');
+            }
+        });
+    });
+    
 });

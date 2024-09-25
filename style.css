@@ -137,6 +137,74 @@ section{
     display: none;
 }
 
+.btn {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--main-color);
+    color: var(--white);
+    font-size: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Gaya untuk layar besar (lebih dari 960px) */
+@media (min-width: 973px) {
+    #menu-icon {
+        display: none; /* Sembunyikan tombol burger pada layar besar */
+    }
+
+    .navbar {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        padding: 0;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: var(--white);
+        white-space: nowrap;
+    }
+}
+
+/* Gaya untuk layar sedang dan kecil (960px ke bawah) */
+@media (max-width: 972px) {
+    #menu-icon {
+        display: block; /* Tampilkan tombol burger pada layar kecil dan sedang */
+    }
+
+    .navbar {
+        display: none; /* Sembunyikan navbar teks pada layar 960px ke bawah */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        background: var(--main-color);
+        flex-direction: column;
+        padding: 2rem;
+        transition: 0.3s ease-in-out;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .navbar.active {
+        display: block; /* Tampilkan navbar sebagai pop-up saat tombol burger diklik */
+    }
+
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        color: var(--black);
+        white-space: nowrap; /* Mencegah teks memecah ke baris baru */
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100%;
+    }
+}
+
+
 /* Home */
 
 .home{
@@ -160,6 +228,7 @@ section{
     color: #fff;
     padding-bottom: 3.5rem;
 }
+
 
 /* About */
 .about .row{
@@ -382,6 +451,20 @@ section{
     color: var(--main-color);
 }
 
+/* For screens smaller than 1237px, reduce the button size and stack them vertically */
+@media (max-width: 1236px) {
+    .tips .controls .buttons {
+        width: 100%;
+        font-size: 14px; /* Reduce font size */
+        padding: 15px 15px; /* Adjust padding */
+        margin-bottom: 10px; /* Space between buttons */
+    }
+    
+    .tips .controls {
+        grid-template-columns: 1fr; /* Make buttons stack vertically */
+    }
+}
+
 
 /* tips end */
 
@@ -504,3 +587,41 @@ section{
 }
 
 /* footer end */
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+    .footer .box-container {
+        grid-template-columns: 1fr; /* Stack all footer boxes vertically */
+        gap: 1.5rem; /* Add space between the stacked items */
+    }
+    
+    .footer .box h3 {
+        font-size: 1.8rem; /* Adjust heading size */
+        margin-bottom: 1rem;
+    }
+
+    .footer .box a {
+        font-size: 1.4rem; /* Adjust link size */
+        margin-bottom: 1rem; /* Add space between links */
+    }
+
+    .footer .credit {
+        font-size: 1.4rem; /* Adjust the font size for credits */
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .footer .box-container {
+        grid-template-columns: repeat(2, 1fr); /* Display two columns on medium screens */
+        gap: 2rem;
+    }
+
+    .footer .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer .box a {
+        font-size: 1.4rem;
+    }
+}
