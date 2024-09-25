@@ -384,3 +384,53 @@ section{
 
 
 /* tips end */
+
+/* review */
+
+.reviews .slide p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--black);
+    line-height: 2;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3rem;
+}
+
+.reviews .slide p::before{
+    content: '';
+    position: absolute;
+    bottom: -1.5rem; left: .7rem;
+    height: 3rem; width: 3rem;
+    background: var(--primary);
+    transform: rotate(45deg);
+}
+
+.reviews .slide .user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews .slide .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;   
+}
+
+.reviews .slide .user h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .slide .user span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+/* review end */
+
+
