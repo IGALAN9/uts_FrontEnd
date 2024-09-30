@@ -418,7 +418,7 @@ section{
     padding: 2rem;
     font-size: 1.5rem;
     font-style: italic;
-    background: var(--main-color);
+    background: #f5a623;
     border-radius: .5rem;
     color: var(--black);
     line-height: 2;
@@ -432,7 +432,7 @@ section{
     position: absolute;
     bottom: -1.5rem; left: .7rem;
     height: 3rem; width: 3rem;
-    background: var(--main-color);
+    background: #f5a623;
     transform: rotate(45deg);
 }
 
@@ -446,7 +446,6 @@ section{
     border: none; 
     border-radius: 8px; 
     z-index: 1;
-    overflow-y: auto;
 }
 
 .reviews .slide::before{
@@ -487,3 +486,48 @@ section{
 /* review end */
 
 
+
+/* footer */
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+    color: var(--main-color);
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--main-color);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
+
+/* footer end */
