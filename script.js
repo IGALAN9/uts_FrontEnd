@@ -28,7 +28,7 @@ $(document).ready(function() {
             640: {
                 slidesPerView: 2,
             },
-            768: {
+            1200: {
                 slidesPerView: 3,
             },
         },
